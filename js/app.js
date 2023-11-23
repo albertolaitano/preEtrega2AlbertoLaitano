@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let nombreProducto = contenedorProducto.querySelector('#nombreProducto').textContent;
             let precioProducto = parseFloat(contenedorProducto.querySelector('#precioProducto').textContent.replace('USD ', ''));
             agregarAlCarrito(nombreProducto, precioProducto);
+            alert("Producto agregado al carrito")
         });
     });
 });
@@ -74,3 +75,5 @@ let modalCarrito = document.getElementById('modalCarrito');
     function cerrarModalCarrito() {
         modalCarrito.style.display = 'none';
     }
+
+    

@@ -160,7 +160,7 @@ button {
 
 /* Estilos del botón de carrito */
 .btn-carrito {
-    width: 50px;
+    width: 100px;
     height: 50px;
     background-color: #db1212;
     color: white;
@@ -168,6 +168,10 @@ button {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
+}
+.end {
+    display: flex;
+    justify-content: end;
 }
 
 /* Estilos del modal */
