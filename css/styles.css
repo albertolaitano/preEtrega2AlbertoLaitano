@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#carrito {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+* ---------------MAIN----------------*/
+/* line 245, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 248, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.contenedor .titulo-principal {
+  background-color: #db1212;
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 253, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.contenedor .titulo-principal h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  filter: drop-shadow(5px 5px 10px #260000);
+}
+
+/* line 259, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.contenedor .ramos {
+  background-color: rgba(0, 0, 0, 0.852);
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 265, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.contenedor h2 {
+  padding: 0.5rem;
+  filter: drop-shadow(5px 5px 10px #260000);
+}
+
+@media (max-width: 480px) {
+  /* line 274, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+  .contenedor .titulo-principal h1 {
+    font-size: 3rem;
+  }
+  /* line 279, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+  .contenedor .ramos h2 {
+    font-size: 3vw;
+  }
+}
+
+.articulo-completo {
+  background-color: white;
+  border: solid 1px #b2b2b2;
+  transition: 0.3s;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 90%;
+  text-align: center;
+}
+
+/* line 310, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.articulo-completo:hover {
+  transform: scale(1.1);
+}
+
+/* line 313, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.articulo-completo a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 317, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.articulo-completo p {
+  font-weight: bold;
+  font-size: 130%;
+}
+
+/* line 322, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.articulo-completo .articulo-img img {
+  max-width: 70%;
+}
+
+/* line 328, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.articulo :hover {
+  font-weight: bold;
+  color: #db1212;
+  height: 100%;
+}
+
+/* line 334, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+button {
+  background-color: #db1212;
+  border-color: whitesmoke;
+  color: whitesmoke;
+  padding: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* line 346, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.boton :hover {
+  font-weight: bold;
+  background-color: #8f0909;
+}
+
+
+/* line 361, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.descripcion-articulo {
+  background-color: white;
+  text-align: center;
+}
+
+/* line 364, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.descripcion-articulo h1 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* line 369, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.descripcion-articulo p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #db1212;
+}
+
+/* line 374, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.descripcion-articulo li {
+  text-align: start;
+}
+
+/* line 377, ../tercerPreEntregaAlbertoLaitano/sass/styles.scss */
+.descripcion-articulo img {
+  margin-top: 2rem;
+  max-width: 60%;
+}
+
+
+/* Estilos del botón de carrito */
+.btn-carrito {
+    width: 50px;
+    height: 50px;
+    background-color: #db1212;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.cerrar-modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

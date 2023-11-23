@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<section>
+    <div>
+        <button id="btnCarrito" class="btn-carrito"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div id="modalCarrito" class="modal">
+        <div class="modal-content">
+            <!-- Contenido del carrito -->
+            <span class="cerrar-modal" onclick="cerrarModalCarrito()">&times;</span>
+            <div>
+                <div><h3>Carrito de Compras</h3></div>
+                <div><ul id="listaCarrito"></ul></div>
+                <div><p>Importe Total: USD <span id="valorTotal">0.00</span></p></div>
+                <div class="boton">
+                    <button id="botonLimpiar">Limpiar Carrito</button>
+                    <button>Finalizar Compra</button>
+                </div>
+        </div>
+    </div>
+  
+</section>
+
+    
+    <section>
+        <div class="subTitulo"><h3>Herramientas a batería</h3></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div id="card" class="articulo-completo">
+                        <div class="articulo-img">
+                            <img src="../imagenes/productos/amoladora-milwaukee.webp" alt="amoladora-milwaukee"></a>
+                        </div>
+                        <div class="articulo">
+                            <h5 id="nombreProducto">AMOLADORA 5 FUEL 18V 4.0AH 2781-159 MILWAUKEE</h5>
+                        </div>
+                        <div>
+                            <p id="precioProducto">USD 815,00</p>
+                        </div> 
+                        <div class="boton">
+                            <button id="botonComprar">Comprar</button>
+                        </div>
+                    </div>                                      
+                </div>
+        
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div id="card" class="articulo-completo">
+                        <div class="articulo-img">
+                            <img src="../imagenes/productos/llave-de-impacto-milwaukee.webp" alt="llave-de-impacto-milwaukee"></a>
+                        </div>
+                        <div class="articulo">
+                            <h5 id="nombreProducto">LLAVE DE IMPACTO 1/2 18V 3.0AH 2 BAT2663-259 MILWAUKEE<h5>
+                        </div>
+                        <div>
+                            <p id="precioProducto">USD 908,00</p>
+                        </div>  
+                        <div class="boton">
+                            <button id="botonComprar">Comprar</button>
+                        </div>          
+                    </div>                         
+                </div>
+        
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div id="card" class="articulo-completo">
+                        <div class="articulo-img">
+                            <img src="../imagenes/productos/taladro-percutor-milwoukee-2-bat.webp" alt="taladro-percutor-milwoukee-2-bat"></a>
+                        </div>
+                        <div class="articulo">
+                            <h5 id="nombreProducto">TALADRO PERCUTOR 1/2 18V 1.5AH 2 BAT PERC2607-259C MILWAUKEE</h5>
+                        </div>
+                        <div>
+                            <p id="precioProducto">USD 550,00</p>
+                        </div> 
+                        <div class="boton">
+                            <button id="botonComprar">Comprar</button>
+                        </div>        
+                    </div>                             
+                </div>
+        
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div id="card" class="articulo-completo">
+                        <div class="articulo-img">
+                            <img src="../imagenes/productos/sierra-circular-milwoukee.webp" alt="sierra-circular-milwoukee"></a>
+                        </div>
+                        <div class="articulo">
+                        <h5 id="nombreProducto">SIERRA CIRCULAR 6 1/2 18V FUEL (SIN BAT/SIN CARG ) 2730-059</h5>
+                         </div>
+                         <div>
+                            <p id="precioProducto">USD 484,00</p>
+                        </div>  
+                        <div class="boton">
+                            <button id="botonComprar">Comprar</button>
+                        </div>         
+                    </div>
+                         
+                </div>
+    
+            </div>
+        </div>   
+        
+    </section>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
